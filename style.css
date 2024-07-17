@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.big{
+    padding: 180px 90px;
+    background-color: #0e83cd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 120px;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 10px  35px;
+    position: relative;
+}
+.span {
+    position: absolute;
+    transition: 0.4s all linear;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(16, 16, 51);
+}
+.span1{
+   left: 0;
+}
+.link:hover .span1  {
+    left: 50%;
+    translate: -50% -50%;
+    rotate: -90deg;
+    background-color: white;
+   
+}
+.span2{
+    right: 0;
+}
+.link:hover .span2{
+    right: 50%;
+    translate: 50% 50%;
+    rotate: -90deg;
+    background-color: white;
+}
